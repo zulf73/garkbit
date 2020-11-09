@@ -1,0 +1,24 @@
+doctype
+html
+    head
+        title garkbit - gallery management
+
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/styles/main.css')
+
+        link(rel='icon', type='image/x-icon', href='/images/favicon.ico')
+        link(rel='icon', type='image/png', sizes='32x32', href='/images/favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='/images/favicon-16x16.png')
+
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+        meta(name='description', content='garkbit!')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    body
+        #app
+        script(type='text/javascript').
+            window.__INITIAL_STATE__ = !{JSON.stringify(initialState)};        
+        script(src='/js/garkbit.js')
