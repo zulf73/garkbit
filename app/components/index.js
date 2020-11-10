@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Link, browserHistory } from 'react-router';
 import { DragDropContext } from 'react-dnd';
@@ -43,7 +44,7 @@ class AppView extends React.Component {
 }
 
 AppView.contextTypes = {
-    router: React.PropTypes.object
+    router: PropTypes.object
 };
 
 AppView = connect(
